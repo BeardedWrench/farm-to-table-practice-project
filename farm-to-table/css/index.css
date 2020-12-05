@@ -1,0 +1,244 @@
+/*
+    IMPORT FONTS
+*/
+@import url('https://fonts.googleapis.com/css2?family=Nunito&family=PT+Sans&display=swap');
+
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+    background-color:#fffafa; 
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/*
+    CUSTOM CSS
+*/
+*{
+    font-family:'PT Sans', sans-serif;
+    line-height: 1.5;
+}
+body{
+    color:#444;
+}
+h2 {
+    font-family: 'Nunito', sans-serif;
+    letter-spacing: 3px;
+    font-weight:bold;
+}
+header{
+    display:flex;
+    align-items:center;
+    margin-top:20px;
+    padding-bottom:10px;
+    border-bottom: 22px solid #fffafa; 
+}
+header .logo img{
+    width:32px;
+    margin-left:20px;
+    filter: invert(25%) sepia(0%) saturate(503%) hue-rotate(296deg) brightness(95%) contrast(89%);
+}
+nav{
+    width:20%;
+    display:flex;
+    justify-content: space-evenly;
+}
+nav a{
+    text-decoration: none;
+    color:#444;
+}
+nav a:hover{
+    text-decoration: underline;
+}
+.splash{
+    background-image:url(../images/header.jpg);
+}
+
+section.fresh{
+    display:flex;
+    justify-content: space-evenly;
+    margin-top:30px;
+    background-color:#fffafa;
+}
+
+section .fresh-item{
+    background-color:white;
+    border: 2px solid #444;
+    width:300px;
+    height:200px;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items:center;
+    color: #444;
+    
+}
+section .fresh-item img{
+    width:48px;
+    height:48px;
+    margin-bottom:15px;
+    filter: invert(25%) sepia(0%) saturate(503%) hue-rotate(296deg) brightness(95%) contrast(89%);
+}
+
+section.story{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items:center;
+    box-sizing: border-box;
+    width:55%;
+    border:2px solid #444;
+    background-color:white;
+    margin:auto;
+    margin-top:40px;
+    padding:40px;
+}
+section.story img{
+    width:64px;
+    height:64px;
+    filter: invert(25%) sepia(0%) saturate(503%) hue-rotate(296deg) brightness(95%) contrast(89%);
+}
+section.story h2{
+    font-size:1.3rem;
+    margin-bottom:10px;
+    margin-top:10px;
+}
+section.story p{
+    letter-spacing: 2px;
+}
+section.featured{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-evenly;
+    margin:auto;
+    margin-top:5%;
+}
+section.featured img{
+    width:35%;
+    margin-bottom:60px;
+}
+
+section.info{
+    margin-top:5%;
+    display:flex;
+    justify-content: space-evenly;
+    flex-wrap:wrap;
+}
+section.info h2{
+    width:100%;
+    margin-bottom:3%;
+    text-align:center;
+    font-size:1.5rem;
+}
+address img{
+    width:64px;
+    height:64px;
+    filter: invert(25%) sepia(0%) saturate(503%) hue-rotate(296deg) brightness(95%) contrast(89%);
+}
+address p{
+    line-height: 2;
+}
+address h3{
+    font-size:1.5rem;
+    letter-spacing: 2px;
+    margin-bottom:10px;
+}
+section.info .farm{
+    width:25%;
+}
+
+
+
+footer{
+    background-color: #fcb131;
+    height:20vh;
+    color: white;
+    padding:20px 50px 20px 50px;
+    display:flex;
+    margin-top:50px;
+}
+footer .socials{
+    margin-top:20px;
+    width:20%;
+}
+footer .socials h2{
+    color:white;
+    text-align:center;
+}
+footer .socials img{
+    width:48px;
+    filter: brightness(0) invert(1);
+    transition: .3s
+}
+footer .socials img:hover{
+    transform: rotate(20deg);
+}
+footer .socials img:active{
+    width:45px;
+}
+footer .socials .social-icons{
+    display:flex;
+    justify-content: space-between;
+    margin-top:30px;
+}
+footer .footer-nav{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    width:50%;
+    margin:auto;
+}
+footer .footer-nav a{
+    color:white;
+    text-decoration: none;
+    height:30px;
+    margin-bottom:10px;
+}
+footer .footer-nav a:hover{
+    text-decoration: underline;
+}
+footer .copyright{
+    display:flex;
+    align-items: flex-end;
+    margin-bottom:20px;
+}
